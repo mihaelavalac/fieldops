@@ -1,0 +1,26 @@
+# Node
+node_modules/
+*.log
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv*/
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# PHP
+/vendor/
+composer.lock
+.phpunit.cache/
+
+# Frontends
+.apps-cache/
+
+# Docker & misc
+.env
+.env.*
+.DS_Store
+*.swp
