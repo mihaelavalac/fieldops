@@ -26,3 +26,14 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # --- new step: run tests with coverage (once you add tests) ---
+      - name: Run tests with coverage
+        run: npm test -- --coverage || echo "no tests yet"
+
+      # --- upload coverage to Codecov ---
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} # only required for private repos
+          directory: ./gateway/coverage
