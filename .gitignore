@@ -1,26 +1,86 @@
-# Node
-node_modules/
-*.log
-coverage/
+# --------------------
+# OS / Editor junk
+# --------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.vscode/
+.idea/
 
+# --------------------
+# Node / TypeScript
+# --------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+coverage/
+dist/
+.next/
+out/
+*.log
+
+# --------------------
 # Python
+# --------------------
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+.eggs/
+.Python
+.env
+.venv
 .venv*/
 .pytest_cache/
 .mypy_cache/
 .coverage
+.coverage.*
+htmlcov/
+.tox/
+.build/
+pip-wheel-metadata/
 
-# PHP
-/vendor/
+# --------------------
+# PHP / Laravel
+# --------------------
+vendor/
 composer.lock
+.phpunit.result.cache
 .phpunit.cache/
+.env.local
+.env.*.backup
 
-# Frontends
-.apps-cache/
+# Laravel specific
+/public/storage
+/storage/*.key
+/storage/framework/*
+!/storage/framework/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
 
-# Docker & misc
+# --------------------
+# Docker / Misc
+# --------------------
 .env
 .env.*
-.DS_Store
-*.swp
+docker-compose.override.yml
+localstack_data/
+pg_data/
+mysql_data/
+mongo_data/
+
+# --------------------
+# Frontend builds
+# --------------------
+.apps-cache/
+build/
+dist/
+*.tsbuildinfo
