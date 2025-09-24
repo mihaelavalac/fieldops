@@ -1,5 +1,7 @@
 # FieldOps
 
+![CI (PR)](https://github.com/mihaelavalac/fieldops/actions/workflows/ci-pr.yml/badge.svg?branch=main)
+
 Polyglot demo platform: microservices (FastAPI, Laravel, Node/TS) + microfrontends (React + Angular).
 Includes JWT gateway, S3 file uploads, SQS events, Postgres/MySQL/Mongo, Redis cache.
 
